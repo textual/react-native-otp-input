@@ -2,7 +2,7 @@
 
 # React Native OTP Input
 
-![Tests](https://github.com/hirbod/react-native-otp-input/workflows/Tests/badge.svg)
+[![Tests](https://github.com/hirbod/react-native-otp-input/actions/workflows/test.yml/badge.svg)](https://github.com/hirbod/react-native-otp-input/actions/workflows/test.yml)
 
 **@hirbod/react-native-otp-input** is a tiny Javascript library which provides an elegant UI for the end user to input one time passcode (OTP). It handles the input suggestion on iOS when the OTP SMS is received. For Android, it will autofill when the user presses the copy button on the SMS notification bar. It also features a carefully crafted flow to handle edge cases for volatile user gestures. We provide default UI, but you can always customize the appearance as you like.
 

@@ -6,7 +6,7 @@
 
 **@hirbod/react-native-otp-input** is a tiny Javascript library which provides an elegant UI for the end user to input one time passcode (OTP). It handles the input suggestion on iOS when the OTP SMS is received. For Android, it will autofill when the user presses the copy button on the SMS notification bar. It also features a carefully crafted flow to handle edge cases for volatile user gestures. We provide default UI, but you can always customize the appearance as you like.
 
-This is a fork of `twotalltotems/react-native-otp-input`, since it has been updated for a while and was breaking on Android.
+This is a fork of `@twotalltotems/react-native-otp-input`, since it hasn't been updated for a while and was breaking on Android.
 
 ![demo.gif](https://s3.ca-central-1.amazonaws.com/tttevents/iosvideo.gif)
 ![demo.gif](https://s3.ca-central-1.amazonaws.com/tttevents/android.gif)
@@ -29,7 +29,7 @@ or
 
 ### Expo:
 
-This library works on Expo, SDK 43+ (but you will need to use a custom expo-dev-client)
+This library works on Expo SDK 43+ (you will need to use a custom expo-dev-client though)
 
 ## Basic Usage
 

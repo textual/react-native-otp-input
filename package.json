@@ -1,6 +1,6 @@
 {
-  "name": "@twotalltotems/react-native-otp-input",
-  "version": "1.3.11",
+  "name": "@hirbod/react-native-otp-input",
+  "version": "2.0.0",
   "description": "is a tiny JS library for one time passcode (OTP). Supports smart input suggestion on iOS and code autofill on Android (it will be filled when you press the copy button on the SMS notification bar)",
   "main": "./dist/index.js",
   "types": "./index.d.ts",
@@ -18,7 +18,7 @@
     "setupFilesAfterEnv": [
       "<rootDir>setup-tests.js"
     ],
-    "testEnvironment": "enzyme",
+    "testEnvironment": "jsdom",
     "testEnvironmentOptions": {
       "enzymeAdapter": "react16"
     },
@@ -31,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Twotalltotems/react-native-otp-input.git"
+    "url": "git+https://github.com/hirbod/react-native-otp-input.git"
   },
   "keywords": [
     "react-native",
@@ -48,28 +48,33 @@
   ],
   "author": "TTT Studio (https://ttt.studio)",
   "contributors": [
+    "Hirbod Mirjavadi (https://github.com/hirbod)",
     "Becky Wu <becky.wu@ttt.studio> (https://github.com/BeckyWu220)",
     "Felipe Peña <felipe@penya.cl> (http://felipe.penya.cl)"
   ],
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@types/jest": "^25.1.4",
-    "@types/react": "^16.9.25",
-    "@types/react-native": "^0.61.23",
-    "babel-jest": "^25.1.0",
+    "@babel/core": "^7.12.9",
+    "@types/jest": "^27.4.0",
+    "@types/react": "^17.0.39",
+    "@types/react-native": "^0.66.15",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
+    "babel-jest": "^27.5.1",
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
-    "jest": "^25.1.0",
-    "jest-environment-enzyme": "^7.1.2",
+    "jest": "^27.5.1",
+    "jest-environment-jsdom": "^27.5.1",
     "jest-enzyme": "^7.1.2",
-    "jsdom": "^16.1.0",
-    "react": "16",
-    "react-dom": "^16.12.0",
-    "react-native": "^0.61.5",
-    "typescript": "^3.8.3"
+    "jsdom": "^19.0.0",
+    "react": "17.0.2",
+    "react-dom": "^17.0.2",
+    "react-native": "^0.67.2",
+    "typescript": "^4.5.5"
   },
   "dependencies": {
-    "@react-native-community/clipboard": "^1.2.2"
-  }
+    "@react-native-clipboard/clipboard": "^1.8.5"
+  },
+  "bugs": {
+    "url": "https://github.com/hirbod/react-native-otp-input/issues"
+  },
+  "homepage": "https://github.com/hirbod/react-native-otp-input#readme"
 }

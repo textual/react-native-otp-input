@@ -1,33 +1,40 @@
-![PaginatableList](https://raw.githubusercontent.com/Twotalltotems/react-native-otp-input/master/assets/otp_banner.jpg)
+![PaginatableList](https://raw.githubusercontent.com/hirbod/react-native-otp-input/master/assets/otp_banner.jpg)
 
 # React Native OTP Input
 
-![Tests](https://github.com/Twotalltotems/react-native-otp-input/workflows/Tests/badge.svg)
+![Tests](https://github.com/hirbod/react-native-otp-input/workflows/Tests/badge.svg)
 
-**@twotalltotems/react-native-otp-input** is a tiny Javascript library which provides an elegant UI for the end user to input one time passcode (OTP). It handles the input suggestion on iOS when the OTP SMS is received. For Android, it will autofill when the user presses the copy button on the SMS notification bar. It also features a carefully crafted flow to handle edge cases for volatile user gestures. We provide default UI, but you can always customize the appearance as you like.
+**@hirbod/react-native-otp-input** is a tiny Javascript library which provides an elegant UI for the end user to input one time passcode (OTP). It handles the input suggestion on iOS when the OTP SMS is received. For Android, it will autofill when the user presses the copy button on the SMS notification bar. It also features a carefully crafted flow to handle edge cases for volatile user gestures. We provide default UI, but you can always customize the appearance as you like.
+
+This is a fork of `twotalltotems/react-native-otp-input`, since it has been updated for a while and was breaking on Android.
 
 ![demo.gif](https://s3.ca-central-1.amazonaws.com/tttevents/iosvideo.gif)
 ![demo.gif](https://s3.ca-central-1.amazonaws.com/tttevents/android.gif)
 
 ## Installation
 
-`npm install --save @twotalltotems/react-native-otp-input`
+`npm install --save @hirbod/react-native-otp-input`
 or
-`yarn add @twotalltotems/react-native-otp-input`
+`yarn add @hirbod/react-native-otp-input`
 
 ## Dependencies
 
-### NOTES: 
+### NOTES:
+
 From version 1.3.10: We use @react-native-community/clipboard to handle the clipboard in this package, So you should install @react-native-community/clipboard
 
-`npm install --save @react-native-community/clipboard`
+`npm install --save @react-native-clipboard/clipboard`
 or
-`yarn add @react-native-community/clipboard`
+`yarn add @react-native-clipboard/clipboard`
+
+### Expo:
+
+This library works on Expo, SDK 43+ (but you will need to use a custom expo-dev-client)
 
 ## Basic Usage
 
 ```js
-import OTPInputView from '@twotalltotems/react-native-otp-input'
+import OTPInputView from '@hirbod/react-native-otp-input'
 
 ...
 
@@ -38,7 +45,7 @@ import OTPInputView from '@twotalltotems/react-native-otp-input'
 ## More Advanced Usage
 
 ```js
-import OTPInputView from '@twotalltotems/react-native-otp-input'
+import OTPInputView from '@hirbod/react-native-otp-input'
 
 ...
 
@@ -112,70 +119,3 @@ If you are interested in Android SMS Retriever API, we would suggest @Faizal's r
 - [x] Typescript implementation
 - [x] Add basic unit tests
 - [ ] Add integration tests
-
-## Contributors
-
-<table>
-    <tr border="0" style="border: none; ">
-	      <th border="0" style="border-left: none; border-right: none;">
-        	<img src="https://avatars1.githubusercontent.com/u/1243479?s=400&v=4" width="60px;" style="border-radius: 50%;"/>
-        	<br />
-        	<sub><a href="https://github.com/ansonyao">Anson Yao</a></sub> <br />
-        </th>
-        <th border="0" style="border-left: none; border-right: none;">
-        <div>
-        	<img src="https://avatars3.githubusercontent.com/u/16603120?s=460&v=4" width="60px;" style="border-radius: 50%;"/>
-        	<br />
-        	<sub><a href="https://github.com/BeckyWu220">Becky Wu</a></sub> <br />
-        </div>
-        </th>
-        <th border="0" style="border-left: none; border-right: none;">
-        	<img src="https://avatars3.githubusercontent.com/u/440097?s=460&v=4" width="60px;" style="border-radius: 50%;"/>
-        	<br />
-        	<sub><a href="https://github.com/fpena">Felipe Peña</a></sub> <br />
-        </th>
-        <th border="0" style="border-left: none; border-right: none;">
-        	<img src="https://avatars3.githubusercontent.com/u/60905710?s=400&v=4" width="60px;" style="border-radius: 50%;"/>
-        	<br />
-        	<sub><a href="https://github.com/ericdao-ttt">Eric Dao</a></sub> <br />
-        </th>
-        <th border="0" style="border-left: none; border-right: none;">
-        	<img src="https://avatars3.githubusercontent.com/u/3868329?s=460&v=4" width="60px;" style="border-radius: 50%;"/>
-        	<br />
-        	<sub><a href="https://github.com/VinsonLi">Vinson Li</a></sub> <br />
-        </th>
-        <th border="0" style="border-left: none; border-right: none;">
-        	<img src="https://avatars0.githubusercontent.com/u/15810133?s=400&v=4" width="60px;" style="border-radius: 50%;"/>
-        	<br />
-        	<sub><a href="https://github.com/felixcck">Felix Cheng</a></sub> <br />
-        </th>
-        <th border="0" style="border-left: none; border-right: none;">
-        	<img src="https://avatars3.githubusercontent.com/u/10748192?s=460&v=4" width="60px;" style="border-radius: 50%;"/>
-        	<br />
-        	<sub><a href="https://github.com/MitchellGanton">Mitchell Ganton</a></sub> <br />
-        </th>
-    </tr>
-</table>
-
-## External Contributors
-
-<table>
-    <tr border="0" style="border: none; ">
-        <th border="0" style="border-left: none; border-right: none;">
-        <div>
-        	<img src="https://avatars2.githubusercontent.com/u/17710983?s=400&v=4" width="60px;" style="border-radius: 50%;"/>
-        	<br />
-        	<sub><a href="https://github.com/mikhailshvets">Mikhail.sh</a></sub> <br />
-        </div>
-        </th>
-    </tr>
-</table>
-
-## Premium Support By TTT Studios
-
-OTP input is presented by the mobile team at [TTT Studios](https://ttt.studio). We are a Digital Innovation Studio based out of Vancouver, Canada, delivering custom software and solutions that are designed and developed 100% in-house. The technologies we work with include AR & VR, IoT, AI, security & encryption, and cloud computing.
-
-<div align="right">
-	<img src="https://ttt.studio/wp-content/themes/tttwordpresstheme/imgs/ttt-colour.png" width="200px"/>
-	<h5>Empowering Business Through Technology</h5>
-</div>

@@ -82,7 +82,9 @@ export default class OTPInputView extends Component<
     const digits = this.getDigits();
     const focusIndex = digits.length ? digits.length - 1 : 0;
     if (focusIndex < pinCount && autoFocusOnLoad) {
-      this.focusField(focusIndex);
+      setTimeout(() => {
+        this.focusField(focusIndex);
+      }, 100);
     }
   };
 
@@ -215,6 +217,7 @@ export default class OTPInputView extends Component<
       keyboardType,
       selectionColor,
       keyboardAppearance,
+      autoFocusOnLoad,
     } = this.props;
     const { defaultTextFieldStyle } = styles;
     const { selectedIndex, digits } = this.state;
@@ -229,6 +232,7 @@ export default class OTPInputView extends Component<
         <TextInput
           testID="textInput"
           underlineColorAndroid="rgba(0,0,0,0)"
+          autoFocus={autoFocusOnLoad && index === 0}
           style={
             selectedIndex === index
               ? [

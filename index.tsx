@@ -11,7 +11,8 @@ import {
   EmitterSubscription,
   TextStyle,
 } from "react-native";
-import Clipboard from "@react-native-clipboard/clipboard";
+//import Clipboard from "@react-native-clipboard/clipboard";
+import * as Clipboard from 'expo-clipboard';
 import styles from "./styles";
 import { isAutoFillSupported } from "./helpers/device";
 import { codeToArray } from "./helpers/codeToArray";
